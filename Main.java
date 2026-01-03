@@ -181,6 +181,7 @@ if(user1.getType().equals("Adder")) {
     a.setUser(user1);
     System.out.println(a.compute());
 }
+    
         if(user2.getType().equals("Multiplier")) {
             MultiplierInterface a=new Multiplier();
             System.out.println("====USER 1 ADDER====");
@@ -189,9 +190,9 @@ if(user1.getType().equals("Adder")) {
             System.out.println(c.calculate(1, 2));
             System.out.println(c.calculate(1, 2, 3));
             System.out.println("Overrided");
-            System.out.println(a.compute());
             a.setUser(user2);
-        }
-
+            System.out.println(a.compute());
+            
 }
+
 }
