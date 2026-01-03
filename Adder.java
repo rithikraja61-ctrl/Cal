@@ -26,9 +26,10 @@ Adder()
  @Override
    public int compute()
     {
-        setResult(user.getNum1()*user.getNum2()*user.getNum3());
+        setResult(user.getNum1()+user.getNum2()+user.getNum3());
         return this.getResult();
     }
 
 
 }
+
