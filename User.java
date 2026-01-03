@@ -1,0 +1,65 @@
+public class User implements UserInterface{
+    private int num1, num2, num3,result;
+    private AdderInterface adder;
+    private MultiplierInterface multiplier;
+    private String type;
+User(int num1,int num2,int num3,String type)
+{
+    this.num1=num1;
+    this.num2=num2;
+    this.num3=num3;
+    this.type=type;
+}
+public User()
+{
+
+}
+
+    public int getNum1() {
+        return num1;
+    }
+
+    public void setNum1(int num1) {
+        this.num1 = num1;
+    }
+
+    public int getNum2() {
+        return num2;
+    }
+
+    public void setNum2(int num2) {
+        this.num2 = num2;
+    }
+
+    public int getNum3() {
+        return num3;
+    }
+
+    public void setNum3(int num3) {
+        this.num3 = num3;
+    }
+
+    public AdderInterface getAdder() {
+        return adder;
+    }
+
+    public void setAdder(AdderInterface adder) {
+        this.adder = adder;
+    }
+
+    public MultiplierInterface getMultiplier() {
+        return multiplier;
+    }
+
+    public void setMultiplier(MultiplierInterface multiplier) {
+        this.multiplier = multiplier;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+}
